@@ -243,5 +243,3 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 3. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.  
    ![cd](https://github.com/Rain-m-a-n/diplom/blob/main/pics/cd.png)  
    ![dockerhub01](https://github.com/Rain-m-a-n/diplom/blob/main/pics/dockerhub01.png)
-   ![dockerhub01][dockerhub01]
-   [dockerhub01]: https://gitlab.com/Rain-m-a-n/diplom/-/blob/main/pics/dockerhub01.png

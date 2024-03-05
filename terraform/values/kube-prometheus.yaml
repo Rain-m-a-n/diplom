@@ -1,0 +1,81 @@
+defaultRules:
+  rules:
+    alertmanager: true
+    etcd: false
+    configReloaders: false
+    kubeControllerManager: false
+    kubelet: true
+    kubeProxy: false
+    windows: false
+
+global:
+  rbac:
+    create: true
+
+prometheus-windows-exporter:
+  prometheus:
+    monitor:
+      enabled: false
+
+alertmanager:
+  enabled: true
+  annotations: {}
+
+grafana:
+  enabled: true
+  adminPassword: netology
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts:
+      - grafana.diplom.netology
+    path: /
+    tls: []
+  sidecar:
+    dashboards:
+      enabled: true
+      label: grafana_dashboard
+      labelValue: "1"
+      searchNamespace: ALL
+      provider:
+        allowUiUpdates: false
+    datasources:
+      enabled: true
+      defaultDatasourceEnabled: true
+      isDefaultDatasource: true
+      uid: prometheus
+      alertmanager:
+        enabled: true
+        uid: alertmanager
+        handleGrafanaManagedAlerts: false
+        implementation: prometheus
+  service:
+    portName: http-web
+
+kubernetesServiceMonitors:
+  enabled: true
+
+kubeApiServer:
+  enabled: true
+
+kubeControllerManager:
+  enabled: false
+  endpoints: []
+
+kubeEtcd:
+  enabled: false
+  endpoints: []
+
+kubeScheduler:
+  enabled: false
+  endpoints: []
+
+kubeProxy:
+  enabled: false
+  endpoints: []
+
+prometheus:
+  enabled: true
+  agentMode: false
+  networkPolicy:
+    enabled: false

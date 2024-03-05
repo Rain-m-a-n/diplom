@@ -1,0 +1,17 @@
+replicaCount: 1
+
+image:
+  repository: byjg/static-httpserver
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  hosts:
+    - web.diplom.netology

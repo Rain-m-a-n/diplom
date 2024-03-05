@@ -177,9 +177,9 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 Ожидаемый результат:
 
 1. Git репозиторий с тестовым приложением и Dockerfile.  
-   ![git-repo](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/git-web.png)  
+   ![git-repo](https://github.com/Rain-m-a-n/diplom/blob/main/pics/git-web.png)  
 3. Регистри с собранным docker image. В качестве регистри может быть DockerHub или [Yandex Container Registry](https://cloud.yandex.ru/services/container-registry), созданный также с помощью terraform.  
-   ![docker-hub](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/dockerhub.png)  
+   ![docker-hub](https://github.com/Rain-m-a-n/diplom/blob/main/pics/dockerhub.png)  
 
 ---
 ### Подготовка cистемы мониторинга и деплой приложения
@@ -216,11 +216,11 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
    158.160.136.201 grafana.diplom.netology
    158.160.136.201 web.diplom.netology
    ```
-   ![grafana](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/grafana-http.png)  
+   ![grafana](https://github.com/Rain-m-a-n/diplom/blob/main/pics/grafana-http.png)  
 3. Дашборды в grafana отображающие состояние Kubernetes кластера.  
-   ![dashboard](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/dashboard.png)  
+   ![dashboard](https://github.com/Rain-m-a-n/diplom/blob/main/pics/dashboard.png)  
 4. Http доступ к тестовому приложению.  
-   ![web](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/web.png)  
+   ![web](https://github.com/Rain-m-a-n/diplom/blob/main/pics/web.png)  
 
 ---
 ### Установка и настройка CI/CD
@@ -237,9 +237,9 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 Ожидаемый результат:
 
 1. Интерфейс ci/cd сервиса доступен по http.  
-   ![ci](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/ci.png)    
+   ![ci](https://github.com/Rain-m-a-n/diplom/blob/main/pics/ci.png)    
 2. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.  
-   ![commit](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/commit.png)  
+   ![commit](https://github.com/Rain-m-a-n/diplom/blob/main/pics/commit.png)  
 3. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.  
    ![cd](https://github.com/Rain-m-a-n/diplom/blob/main/pics/cd.png)  
    ![dockerhub01](https://github.com/Rain-m-a-n/diplom/blob/main/pics/dockerhub01.png)

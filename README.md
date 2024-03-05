@@ -241,7 +241,6 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 2. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.  
    ![commit](https://gitlab.com/Rain-m-a-n/diplom/-/blob/main/pics/commit.png)  
 3. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.  
-   ![cd](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/cd.png)  
-   ![dockerhub01](https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/dockerhub01.png)
+   ![cd](https://github.com/Rain-m-a-n/diplom/blob/main/pics/cd.png)  
+   ![dockerhub01](https://github.com/Rain-m-a-n/diplom/blob/main/pics/dockerhub01.png)
    
-   <img src="https://gitlab.com/Rain-m-a-n/diplom/blob/main/pics/dockerhub01.png" align="center" height="350" width="600"/>
